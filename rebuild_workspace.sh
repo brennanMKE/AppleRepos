@@ -35,7 +35,6 @@ find_and_append_project()
 read_package()
 {
     PACKAGE_NAME=$1
-    # echo $PACKAGE_NAME
     if [ -f "${REPOS_DIR}/${PACKAGE_NAME}/Package.swift" ]; then
         append_file_ref ${PACKAGE_NAME}
     elif [ -d "${REPOS_DIR}/${PACKAGE_NAME}/${PACKAGE_NAME}.xcodeproj" ]; then
@@ -69,4 +68,3 @@ rebuild_workspace()
 }
 
 rebuild_workspace
-# read_packages
