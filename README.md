@@ -14,6 +14,9 @@ The lists are simply Apple.txt and OSS.txt which are associated with Apple's pub
 
 Use the following scripts to clone, rebuild the workspace and update each repo.
 
-* clone.sh            
-* rebuild_workspace.sh 
-* update.sh
+* refresh.sh (updates list of Apple repos with GitHub API)
+* clone.sh (clones all repos in the list)
+* update.sh (updates every repo using Git)
+* rebuild_workspace.sh  (rebuilds workspace)
+
+These scripts can also be run within Xcode with Build Phase Scripts defined in the Apple project in the workspace.

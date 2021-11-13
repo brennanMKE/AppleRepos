@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		26150C5E274085A900B79429 /* Refresh */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 26150C61274085A900B79429 /* Build configuration list for PBXAggregateTarget "Refresh" */;
+			buildPhases = (
+				26150C62274085B600B79429 /* Refresh */,
+			);
+			dependencies = (
+			);
+			name = Refresh;
+			productName = Refresh;
+		};
+		26AB07E12740752200796612 /* Clone */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 26AB07E22740752200796612 /* Build configuration list for PBXAggregateTarget "Clone" */;
+			buildPhases = (
+				26AB07ED2740755400796612 /* Clone */,
+			);
+			dependencies = (
+			);
+			name = Clone;
+			productName = Clone;
+		};
+		26AB07E52740753000796612 /* Update */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 26AB07E62740753000796612 /* Build configuration list for PBXAggregateTarget "Update" */;
+			buildPhases = (
+				26AB07EE2740758100796612 /* Update */,
+			);
+			dependencies = (
+			);
+			name = Update;
+			productName = Update;
+		};
+		26AB07E92740754B00796612 /* Rebuild */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 26AB07EA2740754B00796612 /* Build configuration list for PBXAggregateTarget "Rebuild" */;
+			buildPhases = (
+				26AB07EF274076E800796612 /* Rebuild Workspace */,
+			);
+			dependencies = (
+			);
+			name = Rebuild;
+			productName = Rebuild;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXGroup section */
+		26AB07DA2740751000796612 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		26AB07DB2740751000796612 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					26150C5E274085A900B79429 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					26AB07E12740752200796612 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					26AB07E52740753000796612 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					26AB07E92740754B00796612 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 26AB07DE2740751000796612 /* Build configuration list for PBXProject "Apple" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26AB07DA2740751000796612;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26AB07E12740752200796612 /* Clone */,
+				26AB07E52740753000796612 /* Update */,
+				26AB07E92740754B00796612 /* Rebuild */,
+				26150C5E274085A900B79429 /* Refresh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26150C62274085B600B79429 /* Refresh */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Refresh;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/update.sh\nexit 0\n";
+		};
+		26AB07ED2740755400796612 /* Clone */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Clone;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/clone.sh\nexit 0\n";
+			showEnvVarsInLog = 0;
+		};
+		26AB07EE2740758100796612 /* Update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Update;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/update.sh\nexit 0\n";
+			showEnvVarsInLog = 0;
+		};
+		26AB07EF274076E800796612 /* Rebuild Workspace */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Rebuild Workspace";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/rebuild_workspace.sh\nexit 0\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26150C5F274085A900B79429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26150C60274085A900B79429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26AB07DF2740751000796612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		26AB07E02740751000796612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		26AB07E32740752200796612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26AB07E42740752200796612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26AB07E72740753000796612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26AB07E82740753000796612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26AB07EB2740754B00796612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26AB07EC2740754B00796612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26150C61274085A900B79429 /* Build configuration list for PBXAggregateTarget "Refresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26150C5F274085A900B79429 /* Debug */,
+				26150C60274085A900B79429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AB07DE2740751000796612 /* Build configuration list for PBXProject "Apple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AB07DF2740751000796612 /* Debug */,
+				26AB07E02740751000796612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AB07E22740752200796612 /* Build configuration list for PBXAggregateTarget "Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AB07E32740752200796612 /* Debug */,
+				26AB07E42740752200796612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AB07E62740753000796612 /* Build configuration list for PBXAggregateTarget "Update" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AB07E72740753000796612 /* Debug */,
+				26AB07E82740753000796612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AB07EA2740754B00796612 /* Build configuration list for PBXAggregateTarget "Rebuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AB07EB2740754B00796612 /* Debug */,
+				26AB07EC2740754B00796612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26AB07DB2740751000796612 /* Project object */;
+}
