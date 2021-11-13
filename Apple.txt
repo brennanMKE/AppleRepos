@@ -21,6 +21,7 @@ swift-distributed-tracing
 swift-docc
 swift-docc-render
 swift-docc-symbolkit
+swift-driver
 swift-format
 swift-installer-scripts
 swift-llbuild

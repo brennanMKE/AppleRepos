@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#!/bin/sh
-
 update_git_repo()
 {
   REPO_DIR=$1

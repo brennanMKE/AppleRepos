@@ -46,7 +46,7 @@ read_package()
 
 read_packages()
 {
-    for DIR in `find ${REPOS_DIR} -type d -maxdepth 1`; do
+    for DIR in `find ${REPOS_DIR} -type d -maxdepth 1 | sort | uniq`; do
         PACKAGE_NAME=$(basename ${DIR})
         if [ "${REPOS_DIR}" != "${PACKAGE_NAME}" ]; then
             read_package "${PACKAGE_NAME}"
