@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Clones repos from lists (Apple.txt and OSS.txt)
+
 APPLE_REPOS=$(cat Apple.txt)
 OSS_REPOS=$(cat OSS.txt)
 

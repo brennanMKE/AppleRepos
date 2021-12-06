@@ -120,7 +120,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/update.sh\nexit 0\n";
+			shellScript = "${PROJECT_DIR}/refresh.sh\nexit 0\n";
 		};
 		26AB07ED2740755400796612 /* Clone */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -176,7 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/rebuild_workspace.sh\nexit 0\n";
+			shellScript = "${PROJECT_DIR}/rebuild.sh\nexit 0\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
